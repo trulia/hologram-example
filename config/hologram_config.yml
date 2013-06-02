@@ -12,6 +12,7 @@ documentation_assets: ../hologram_assets
 # Any other asset folders that need to be copied to the destination folder
 # This where you should include your full stylesheets, component javascript,
 # libraries and any other dependencies your style guide will have
-dependencies: ../dependencies
+dependencies:
+  - ../dependencies
 
 
