@@ -117,3 +117,12 @@ text-align: center;
 border-radius: 3px;
 font-size: 12px;
 }
+
+table, table tr, table td, table th {
+  padding: 7px;
+  border: 1px solid #ccc;
+}
+
+table th {
+  font-weight: bold;
+}

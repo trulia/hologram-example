@@ -1,0 +1,34 @@
+/*doc
+---
+title: Badge Colors
+parent: badge
+name: badgeSkins
+category: Components
+---
+
+Class          | Description
+-------------- | -----------------
+badgeStandard  | This is a basic badge
+badgePrimary   | This is a badge with the trulia orange used on CTAs
+badgeSecondary | This is a badge with the alternate CTA color (Trulia green)
+badgeTertiary  | This is a badge for a warning or something negative
+
+
+```html_example
+<strong class="badgeStandard">Sold</strong>
+<strong class="badgePrimary">For Sale</strong>
+<strong class="badgeSecondary">For Rent</strong>
+```
+
+*/
+.badgeStandard {
+  background-color: #999999;
+}
+
+.badgePrimary {
+  background-color: #ff5c00;
+}
+
+.badgeSecondary {
+  background-color: #5eab1f;
+}

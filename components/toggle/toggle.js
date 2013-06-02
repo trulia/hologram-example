@@ -1,4 +1,4 @@
-/*
+/*doc
 ---
 title: Toggle
 name: toggle
