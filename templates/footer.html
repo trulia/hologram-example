@@ -1,18 +1,14 @@
       </div>
     </div>
   </section>
+  <footer>
+    The source code for this style guide is licensed under the MIT license.
+  </footer>
 </div>
-<footer class="footer backgroundLowlight" role="contentinfo">
-  <section class="container">
-    how'd i end up down here?
-  </section>
-</footer>
-
-
 <script>
 $(document).ready(function() {
 
-  // build sidebar navigation
+  // build simple sidebar navigation
   var $headers = $('.main > h1');
   var $componentList = $('.componentList');
 
@@ -25,18 +21,15 @@ $(document).ready(function() {
     );
   });
 
-  // make navigation sticky
-  $('.componentMenu').sticky({ css: {top: '10px'} });
-
   // set the active tab
   var currentHref = document.location.pathname.substr(1);
   if (currentHref)
   {
-    $('.oocssDocNav').find('a[href^="' + currentHref + '"]').addClass('activeNavElem typeEmphasize');
+    $('.docNav').find('a[href^="' + currentHref + '"]').addClass('activeNavElem typeEmphasize');
   }
   else
   {
-    $('.oocssDocNav').find('a').eq(0).addClass('activeNavElem typeEmphasize');
+    $('.docNav').find('a').eq(0).addClass('activeNavElem typeEmphasize');
   }
 
 

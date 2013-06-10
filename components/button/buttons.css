@@ -10,7 +10,7 @@ use either a `<button>` or an `<a>` element:
 
 ```html_example
 <button class="btn btnDefault">Click</button>
-<a class="btn btnDefault" href="trulia.com">Trulia!</a>
+<a class="btn btnDefault" href="http://trulia.com">Don't click</a>
 ```
 
 If your button is actually a link to another page, please use the
