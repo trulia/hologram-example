@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
 
-    <title>My Style Guide</title>
+    <title>My Style Guide <%= title %></title>
     <link rel="shortcut icon" href="static/brick.png" />
 
     <!-- Styleguide CSS -->
@@ -53,6 +53,11 @@
             <div class="componentMenu box boxBasic backgroundBasic">
               <div class="boxBody pan">
                 <ul class="componentList listBorderedHover">
+                  
+                  <% for block in @blocks %>
+                    <li><%= block.title %></li>
+                  <% end %>
+
                 </ul>
               </div>
             </div>
