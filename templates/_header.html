@@ -53,11 +53,9 @@
             <div class="componentMenu box boxBasic backgroundBasic">
               <div class="boxBody pan">
                 <ul class="componentList listBorderedHover">
-                  
-                  <% for block in @blocks %>
-                    <li><%= block.title %></li>
+                  <% @blocks.each do |block| %> 
+                    <li><a href="#<%= block[:name] %>"><%= block[:title] %></a></li>
                   <% end %>
-
                 </ul>
               </div>
             </div>
