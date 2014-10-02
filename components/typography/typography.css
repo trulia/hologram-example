@@ -1,0 +1,44 @@
+/*doc
+---
+title: Typography
+name: typography
+category: Base CSS
+---
+
+These are the heading sizes that you can use site wide.
+
+```html_example_table
+<h1>h1 36px</h1>
+
+<h2>h2 25px</h2>
+
+<h3>h3 20px</h3>
+
+<h4>h4 18px</h4>
+
+<h5>h5 16px</h5>
+
+<p>This is an example of our base font style 16px. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+```
+
+*/
+
+h1{
+  font-size: 36px;
+}
+
+h2{
+  font-size: 25px;
+}
+
+h3{
+  font-size: 20px;
+}
+
+h4{
+  font-size: 18px;
+}
+
+h5{
+  font-size: 16px;
+}
