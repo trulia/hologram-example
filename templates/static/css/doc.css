@@ -103,6 +103,12 @@ div.codeBlock {
   border-bottom-right-radius: 4px;
 }
 
+table div.codeBlock {
+  background-color: transparent;
+  border-top: none;
+  border-radius: 0;
+}
+
 .docSwatch {
   min-height: 218.21px;
   border: 1px solid #ccc;
