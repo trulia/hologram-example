@@ -10,3 +10,14 @@
     display: inline-block;
     border-radius: 8px;
 }
+
+/*doc
+---
+title: Ben's Button
+name: ben-button
+category: basics
+---
+```html_example
+    <div class='bens-button'>Ben's Button</div>
+```
+*/
