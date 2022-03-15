@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>My Style Guide Components</title>
+    <link rel="shortcut icon" href="static/brick.png" />
+
+    <!-- Styleguide CSS -->
+    <link rel="stylesheet" href="static/css/doc.css">
+    <link rel="stylesheet" href="static/css/github.css">
+
+    <!-- CSS to be documented -->
+    <link rel="stylesheet" href="build/css/screen.css">
+
+    <!-- Main libraries -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
+    <!-- component js and init scripts -->
+    <script src="build/script/components.js"></script>
+
+</head>
+
+  <body>
+    <header class="header pbn" role="banner">
+      <div class="backgroundHighlight typeReversed1">
+        <div class="container">
+          <h1 class="h2 mvs">My Style Guide</h1>
+        </div>
+      </div>
+      <div class="backgroundLowlight typeReversed1">
+        <div class="container">
+          <span>
+            <ul class="docNav listInline">
+              <!-- Add you pages here -->
+              <li><a href="index.html">Intro</a></li>
+              <li><a href="base_css.html">Base CSS</a></li>
+              <li><a href="components.html">Components</a></li>
+              <li><a href="javascript.html">Javascript</a></li>
+            </ul>
+          </span>
+        </div>
+      </div>
+      <!-- //header/container -->
+    </header>
+
+    <div class="content">
+      <section>
+        <div class="line">
+
+          <div class="col cols4">
+            <div class="componentMenu box boxBasic backgroundBasic">
+              <div class="boxBody pan">
+                <ul class="componentList listBorderedHover">
+                   
+                    <li><a href="#badge">Badges</a></li>
+                   
+                    <li><a href="#badgeSkins">Badge Colors</a></li>
+                   
+                    <li><a href="#frame">Frames</a></li>
+                   
+                    <li><a href="#frameSmall">Small Frame</a></li>
+                   
+                    <li><a href="#frameStacked">Stacked frame with rotations</a></li>
+                   
+                    <li><a href="#frameStandard">Standard Frame</a></li>
+                   
+                    <li><a href="#frameThumb">Thumbnail Frame</a></li>
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="main col cols20 lastCol">
+
+
+
+<h1 id="badge" class="styleguide">Badges</h1>
+
+<ul class="section-nav">
+  <li><a href="#badgeSkins">Badge Colors</a></li>
+</ul>
+<p class="styleguide">Badges are a way to display a small amount of text or an image within a
+nicely formatted box.</p>
+<h2 id="badgeSkins" class="styleguide">Badge Colors</h2>
+<table class="styleguide"> <tr>
+<th>Class</th>
+<th>Description</th>
+</tr>
+ <tr>
+<td>badgeStandard</td>
+<td>This is a basic badge</td>
+</tr>
+<tr>
+<td>badgePrimary</td>
+<td>This is a badge with the trulia orange used on CTAs</td>
+</tr>
+<tr>
+<td>badgeSecondary</td>
+<td>This is a badge with the alternate CTA color (Trulia green)</td>
+</tr>
+<tr>
+<td>badgeTertiary</td>
+<td>This is a badge for a warning or something negative</td>
+</tr>
+ </table><div class="codeExample">
+  <div class="exampleOutput">
+    <strong class="badgeStandard">Sold</strong>
+<strong class="badgePrimary">For Sale</strong>
+<strong class="badgeSecondary">For Rent</strong>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><span class="nt">&lt;strong</span> <span class="na">class=</span><span class="s">"badgeStandard"</span><span class="nt">&gt;</span>Sold<span class="nt">&lt;/strong&gt;</span>
+<span class="nt">&lt;strong</span> <span class="na">class=</span><span class="s">"badgePrimary"</span><span class="nt">&gt;</span>For Sale<span class="nt">&lt;/strong&gt;</span>
+<span class="nt">&lt;strong</span> <span class="na">class=</span><span class="s">"badgeSecondary"</span><span class="nt">&gt;</span>For Rent<span class="nt">&lt;/strong&gt;</span></pre>
+    </div>
+  </div>
+</div>
+
+<h1 id="frame" class="styleguide">Frames</h1>
+
+<ul class="section-nav">
+  <li><a href="#frameSmall">Small Frame</a></li>
+  <li><a href="#frameStacked">Stacked frame with rotations</a></li>
+  <li><a href="#frameStandard">Standard Frame</a></li>
+  <li><a href="#frameThumb">Thumbnail Frame</a></li>
+</ul>
+<p class="styleguide">A frame is a simple border around some content, usually an image but
+other content can be used as well. The different skin classes generally
+change the intensity and padding size of the frame.</p>
+<h2 id="frameSmall" class="styleguide">Small Frame</h2>
+<p class="styleguide">A small frame using the <code class="styleguide">.polaroid</code> class to include some text along with the image. Note the use of the inline style to set the width.
+This is one of the only places where that is acceptable...</p><div class="codeExample">
+  <div class="exampleOutput">
+    <div class="frameSmall">
+  <img alt="" src="http://placekitten.com/180/135">
+  <div class="polaroid" style='width:180px;'>
+    <p class="mvn">Here's a little text below the image</p>
+  </div>
+</div>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"frameSmall"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">alt=</span><span class="s">""</span> <span class="na">src=</span><span class="s">"http://placekitten.com/180/135"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"polaroid"</span> <span class="na">style=</span><span class="s">'width:180px;'</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"mvn"</span><span class="nt">&gt;</span>Here's a little text below the image<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></pre>
+    </div>
+  </div>
+</div>
+
+<h2 id="frameStacked" class="styleguide">Stacked frame with rotations</h2>
+<div class="codeExample">
+  <div class="exampleOutput">
+    <div class="frameStacked">
+  <img alt="" src="http://placekitten.com/480/640">
+</div>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"frameStacked"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">alt=</span><span class="s">""</span> <span class="na">src=</span><span class="s">"http://placekitten.com/480/640"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span></pre>
+    </div>
+  </div>
+</div>
+
+<h2 id="frameStandard" class="styleguide">Standard Frame</h2>
+<div class="codeExample">
+  <div class="exampleOutput">
+    <div class="frameStandard">
+  <img alt="" src="http://placekitten.com/480/640">
+</div>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"frameStandard"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">alt=</span><span class="s">""</span> <span class="na">src=</span><span class="s">"http://placekitten.com/480/640"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span></pre>
+    </div>
+  </div>
+</div>
+
+<h2 id="frameThumb" class="styleguide">Thumbnail Frame</h2>
+<div class="codeExample">
+  <div class="exampleOutput">
+    <div class="frameThumb">
+  <img alt="" src="http://placekitten.com/120/120">
+</div>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"frameThumb"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">alt=</span><span class="s">""</span> <span class="na">src=</span><span class="s">"http://placekitten.com/120/120"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span></pre>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    The source code for this style guide is licensed under the MIT license.
+  </footer>
+</div>
+<script>
+$(document).ready(function() {
+
+  // set the active tab
+  var currentHref = document.location.pathname.substr(1);
+  if (currentHref)
+  {
+    $('.docNav').find('a[href^="' + currentHref + '"]').addClass('activeNavElem typeEmphasize');
+  }
+  else
+  {
+    $('.docNav').find('a').eq(0).addClass('activeNavElem typeEmphasize');
+  }
+
+
+});
+</script>
+</body>
+</html>
