@@ -6,4 +6,6 @@
     color: #000000;
     background: #eeeeee;
     font-size: 18px bold;
+    text-align: center;
+    display: inline-block;
 }
