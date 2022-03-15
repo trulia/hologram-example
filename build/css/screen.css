@@ -2,10 +2,11 @@
 
 .bens-button {
     padding: 16px;
-    border: 1px #000000;
+    border-style: solid 1px #000000;
     color: #000000;
-    background: #eeeeee;
+    background: #00FFC8;
     font-size: 18px bold;
     text-align: center;
     display: inline-block;
+    border-radius: 8px;
 }
